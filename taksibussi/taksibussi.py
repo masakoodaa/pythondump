@@ -2,13 +2,13 @@
 import time
 
 def play(n):
-    if(n/3==n//3):
-        if(n/5==n//5):
+    if(n % 3 == 0):
+        if(n % 5 == 0):
             return "taksibussi"
         else:
             return "taksi"
     else:
-        if(n/5==n//5):
+        if(n % 5 == 0):
             return "bussi"
         else:
             return str(n)
